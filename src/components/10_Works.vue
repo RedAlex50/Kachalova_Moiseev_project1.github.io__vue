@@ -6,28 +6,76 @@
             было долгим.</h4>
         <div class="slider">
             <div class="row1">
-                <img src="@/img/farbors_ru.jpg">
-                <img src="@/img/Frame_3_(1).png">
-                <img src="@/img/Frame_3_2.png">
-                <img src="@/img/Frame_3_3.png">
-                <img src="@/img/logo_2.png">
-                <img src="@/img/logo-estee.png">
-                <img src="@/img/logo-estee.png">
-                <img src="@/img/nashagazeta_ch.png">
-                <img src="@/img/farbors_ru.jpg">
-                <img src="@/img/logo_0.png">
-                <img src="@/img/Frame_3.png">
+                <split-carousel>
+                    <split-carousel-item>
+                        <img src="@/img/farbors_ru.jpg" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/Frame_3_(1).png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/Frame_3_2.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/Frame_3_3.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/logo_2.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/logo-estee.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/logo-estee.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/nashagazeta_ch.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/farbors_ru.jpg" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/logo_0.png" height="100"/>
+                    </split-carousel-item>
+                    <split-carousel-item>
+                        <img src="@/img/Frame_3.png" height="100"/>
+                    </split-carousel-item>
+                </split-carousel>
+                
             </div>
             <div class="row2"></div>
         </div>
+        
     </div>
 </template>
 <script>
+
 export default {
-    
+    components: {
+    },
+    data() {
+        return {
+            imgs: [
+                    '<img src="@/img/farbors_ru.jpg/>',
+                    '<img src="@/img/Frame_3_(1).png/>',
+                    '<img src="@/img/Frame_3_2.png/>',
+                    '<img src="@/img/Frame_3_3.png/>',
+                    '<img src="@/img/logo_2.png/>',
+                    '<img src="@/img/logo-estee.png/>',
+                    '<img src="@/img/logo-estee.png/>',
+                    '<img src="@/img/nashagazeta_ch.png/>',
+                    '<img src="@/img/farbors_ru.jpg/>',
+                    '<img src="@/img/logo_0.png/>',
+                    '<img src="@/img/Frame_3.png/>',
+            ]
+        };
+    },
 }
+
+
 </script>
 <style scoped>
+
 
 .block9{
     width: 100vw; /* vw - view width - видимая  ширина окна просмотра браузера */

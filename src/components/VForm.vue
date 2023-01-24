@@ -4,24 +4,28 @@
         
           <h1 class="orange">Заполните форму</h1>
           <input id="name"
+              v-model = "form.name"
               required type="name"
               placeholder="Ваше имя"
               name="Name"
               class="inp"
           >
           <input id="telephone"
+              v-model = "form.telephone"
               required type="phone"
               placeholder="Телефон"
               name="Phone"
               class="inp"
           >
           <input id="email"
+              v-model = "form.email"
               required type="email"
               placeholder="E-mail"
               name="Email"
               class="inp"
           >
           <textarea id="anotherInput"
+              v-model = "form.text"
               required type="message"
               placeholder="Ваш комментарий"
               name="Message"
@@ -55,9 +59,48 @@ export default {
         type: Boolean,
     }
   },
+  initForm : {
+    name: null,
+    telephone : null,
+    email : null,
+    text: null,
+  },
+  data() {
+    return {
+      form: {}
+    }
+  },
+  created() {
+    let storedForm = this.getStorage()
+    this.form = { ...this.$options.initForm, ...storedForm}
+  },
+  watch: {
+    form: {
+      handler() {
+        this.updateStorage()
+      },
+      deep: true
+    }
+  },
   methods: {
     close(){
       this.$emit('close', true);
+      this.form = { ...this.$options.initForm };
+    },
+    onSubmit(){
+
+    },
+    getStorage() {
+      return JSON.parse(localStorage.getItem('myform'))
+    },
+    setStorage(val) {
+      localStorage.setItem('myform', JSON.stringify(val))
+    },
+    updateStorage() {
+      let storedForm = this.getStorage()
+      if (!storedForm) storedForm = {}
+      storedForm = JSON.parse(JSON.stringify(this.form))
+      this.setStorage(storedForm)
     }
   }
 }
