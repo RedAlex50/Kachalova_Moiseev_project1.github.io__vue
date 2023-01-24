@@ -6,39 +6,39 @@
             было долгим.</h4>
         <div class="slider">
             <div class="row1">
-                <split-carousel>
+                <split-carousel :height="200" :interval="1000">
                     <split-carousel-item>
-                        <img src="@/img/farbors_ru.jpg" height="100"/>
+                        <img src="@/img/farbors_ru.jpg"/>
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/Frame_3_(1).png" height="100"/>
+                        <img src="@/img/Frame_3_(1).png"/>
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/Frame_3_2.png" height="100"/>
+                        <img src="@/img/Frame_3_2.png" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/Frame_3_3.png" height="100"/>
+                        <img src="@/img/Frame_3_3.png" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/logo_2.png" height="100"/>
+                        <img src="@/img/logo_2.png" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/logo-estee.png" height="100"/>
+                        <img src="@/img/logo-estee.png"/>
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/logo-estee.png" height="100"/>
+                        <img src="@/img/logo-estee.png" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/nashagazeta_ch.png" height="100"/>
+                        <img src="@/img/nashagazeta_ch.png" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/farbors_ru.jpg" height="100"/>
+                        <img src="@/img/farbors_ru.jpg" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/logo_0.png" height="100"/>
+                        <img src="@/img/logo_0.png" />
                     </split-carousel-item>
                     <split-carousel-item>
-                        <img src="@/img/Frame_3.png" height="100"/>
+                        <img src="@/img/Frame_3.png" />
                     </split-carousel-item>
                 </split-carousel>
                 
@@ -67,9 +67,10 @@ export default {
                     '<img src="@/img/farbors_ru.jpg/>',
                     '<img src="@/img/logo_0.png/>',
                     '<img src="@/img/Frame_3.png/>',
-            ]
+            ],
         };
     },
+    
 }
 
 

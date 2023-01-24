@@ -163,8 +163,14 @@ button{
     text-align: center;
 }
 
-.faq {
+@media (min-width: 1200px) {
+    .faq{
     width: 1200px;
+    }
+    
+}
+
+.faq {
     margin: 0 auto;
     flex-direction: column;
     flex-wrap: wrap;

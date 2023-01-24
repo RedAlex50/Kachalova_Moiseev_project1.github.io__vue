@@ -1,8 +1,6 @@
 <template>
     <div>
-        <button class="btn-for-form" @click="formAppear">
-            СВЯЗЬ С НАМИ
-        </button>>
+        
         <v-navbar></v-navbar>
         <v-header></v-header>
         <history></history>
@@ -21,6 +19,9 @@
                 @close="formVisible = false"
             />
         </div>
+        <button class="btn-for-form" @click="formAppear">
+            СВЯЗЬ С НАМИ
+        </button>
     </div>
 </template>
 
@@ -83,10 +84,10 @@ export default {
 
 .btn-for-form{
     color: white;
-    position: sticky;
+    position: fixed;
     top: 90%;
     left: 85%;
-    z-index: 1000;
+    z-index: 3000;
     border: 2px solid #f14d34;
     border-radius: 4px;
     padding: 15px;

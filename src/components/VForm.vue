@@ -1,6 +1,6 @@
 <template lang="">
     <transition name="form">
-      <form class="form" action="https://formcarry.com/s/Alp3NV0uq" method="POST" v-if="isVisible">
+      <form class="form" action="https://formcarry.com/s/o6rqkU0VX" method="POST" v-if="isVisible">
         
           <h1 class="orange">Заполните форму</h1>
           <input id="name"
