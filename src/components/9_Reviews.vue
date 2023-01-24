@@ -226,6 +226,15 @@ export default{
     background-size: contain;
 }
 
+#reviews-prev:hover{
+    cursor: pointer;
+}
+
+
+#reviews-next{
+    cursor: pointer;
+}
+
 .flex{
     display: flex;
 }

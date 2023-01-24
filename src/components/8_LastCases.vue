@@ -96,7 +96,7 @@
   .cases__items img {
     position: absolute;
     border-radius: 5px;
-    z-index: 1;
+    z-index: 0;
   }
   
   .cases__items span {
@@ -113,7 +113,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 4;
+    z-index: 0;
   }
   
   .cases__text .date {

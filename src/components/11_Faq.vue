@@ -199,6 +199,10 @@ button{
     font-family: Montserrat-Bold;
 }
 
+.question:hover{
+    cursor: pointer;
+}
+
 .question-text {
     display: none;
     margin-top: 1rem;
