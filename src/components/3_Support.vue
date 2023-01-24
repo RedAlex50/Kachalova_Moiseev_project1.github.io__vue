@@ -169,7 +169,7 @@ export default {
     background-color: white;
     box-shadow: 100px 50px 100px rgba(0, 0, 0, 0.04); /* Параметры тени */
     padding: 14px;
-    z-index: 12;
+    z-index: 0;
 }
 
 

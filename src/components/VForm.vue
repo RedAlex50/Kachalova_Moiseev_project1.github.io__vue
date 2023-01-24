@@ -176,7 +176,7 @@ input#checkbox_form {
     position: sticky;
     top: 20%;
     left: 35%;
-    z-index: 2000;
+    z-index: 20000;
     background:  linear-gradient(75deg, rgb(9, 9, 17) 0%, rgb(19, 20, 32) 100%);
     overflow: visible;
     border: 1px solid black;
